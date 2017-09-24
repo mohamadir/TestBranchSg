@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snapgroup.Activities.SignInActivity"
+
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="12"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageSwitcher
+                    android:id="@+id/imageSwitcher"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/logo2" />
+
+                <TextView
+                    android:id="@+id/logoTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageSwitcher"
+                    android:layout_centerHorizontal="true"
+                    android:text="Snapgroup"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView102"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Login with Your favorite social network"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_weight="2.67" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="54dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="51dp"
+                    android:layout_alignEnd="@+id/textView98"
+                    android:layout_alignRight="@+id/textView98"
+                    android:layout_below="@+id/textView102"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/facebook_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="59dp"
+                    android:layout_height="61dp"
+                    android:layout_alignLeft="@+id/textView98"
+                    android:layout_alignStart="@+id/textView98"
+                    android:layout_alignTop="@+id/imageView7"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    app:srcCompat="@drawable/chatosh" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView103"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:weightSum="14">
+
+
+                <TextView
+                    android:id="@+id/textView103"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/imageView7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1.28"
+                    android:gravity="center"
+                    android:text="Or"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/signupTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:gravity="center"
+                    android:text="Create new Acount"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView105"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Already Member ?! " />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/signInUsernameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawableTint="#999900"
+                        android:hint=" User Name"
+                        android:inputType="textEmailAddress"
+                        android:text="zohar@gmail.com"
+                        android:textSize="12sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/signInPasswordEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawableTint="#999900"
+                        android:focusableInTouchMode="true"
+                        android:hint=" Password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:text="123456"
+
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/signInVolleyBt"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonsignshape"
+                    android:text="Sign In"
+                    android:textColor="@color/colorWhite" />
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/btLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="40dp" />
+
+                <TextView
+                    android:id="@+id/forgetPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:paddingTop="5dp"
+                    android:text="Forgot Password?"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

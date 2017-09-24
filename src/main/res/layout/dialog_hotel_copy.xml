@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/linear_border"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+
+        android:id="@+id/newHotel"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:text="New Hotel"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorOrange"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/copyFromHotel"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:text="copy the last hotel"
+        android:gravity="center"
+        android:layout_margin="20dp"
+
+        android:textColor="@color/colorOrange"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

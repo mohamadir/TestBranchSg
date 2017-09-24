@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/paymentTypeTv"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="22dp"
+        android:text="Type"
+        android:textColor="@color/orange"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/paymentPriceTv"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/paymentTypeTv"
+        android:layout_alignBottom="@+id/paymentTypeTv"
+        android:layout_toRightOf="@+id/paymentTypeTv"
+        android:layout_toEndOf="@+id/paymentTypeTv" />
+
+    <TextView
+        android:id="@+id/paymentStatusTv"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="card"
+        android:layout_alignBaseline="@+id/paymentPriceTv"
+        android:layout_alignBottom="@+id/paymentPriceTv"
+        android:layout_toRightOf="@+id/paymentPriceTv"
+        android:layout_toEndOf="@+id/paymentPriceTv" />
+
+    <TextView
+        android:id="@+id/cardNumberTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/paymentStatusTv"
+        android:layout_alignBottom="@+id/paymentStatusTv"
+        android:layout_toEndOf="@+id/paymentStatusTv"
+        android:text="**4522"
+        android:layout_toRightOf="@+id/paymentStatusTv" />
+
+    <Button
+        android:id="@+id/paymentEditBt"
+        android:layout_width="65dp"
+        android:layout_height="24dp"
+        android:background="@color/green"
+        android:text="Edit"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/paymentStatusTv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>

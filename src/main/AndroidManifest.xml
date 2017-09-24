@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.snapgroup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logoy"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan"
+        tools:replace="supportsRtl">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:label="Snap Group">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Services.NotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false" />
+
+        <activity android:name=".planActivityy.PlanActivityy" />
+        <activity
+            android:name=".Activities.GroupListActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="GROUPLIST"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+
+            </activity>
+        <service
+            android:name=".Services.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".Fragments.NewMemberPageFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.NewGroupProfile1Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Tests.ContactsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBmZpEBI_InkDV1t3-FZ7myRSZIfVafs10" />
+
+        <activity
+            android:name=".Activities.MapActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Activities.ServicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.NewGroupSettingsPageAtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ProfileMemberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.NewGroupFlightServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.NewGroupChooseHotel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.NewGroupHotelsServiceActivity"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name=".AutoToken.TokenActivity"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name=".Activities.NewGroupTourGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.NewGroupProfile2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.NewGroupDetailsActitivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.NewGroupTransportationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AutoCompleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.UploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.HotelServiceFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ShakeTestActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activities.NewGroupFinishActivity" />
+        <activity android:name=".Activities.SmsTestActivity" />
+        <activity android:name=".Activities.FacebookLoginTestActivity" />
+        <activity
+            android:name=".Activities.SignInActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activities.NewGroupServicesActivity" />
+        <activity android:name=".FilePicker.CsvFilePIcker" />
+        <activity android:name=".Tests.GoogleLoginActivity" />
+        <activity android:name=".Classes.GeofencesTestActivity" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.MapRadiusActivity" />
+        <activity android:name=".Tests.GridTestActivity" />
+        <activity android:name=".Activities.TestsPagesActivity" />
+        <activity android:name=".Activities.Example2Activity" />
+        <activity android:name=".Activities.ServicesPerDayActivity" />
+        <activity android:name=".Activities.DaysPlanBrodCastActivity" />
+        <activity android:name=".Tests.HosenShapesTests" />
+        <activity android:name=".Activities.DaysPlanListBroadcastActivity" />
+        <activity android:name=".Activities.GroupLeaderProfileActivity" />
+        <activity android:name=".Activities.JoinGroupActivity" />
+        <activity android:name=".Tests.YoutubeTestActivity" />
+        <activity android:name=".Activities.AccountActivity" />
+        <activity android:name=".Tests.ShapesTestsActivity" />
+        <activity android:name=".Activities.MemberInboxActivity" />
+        <activity android:name=".Activities.ProviderProfile" />
+        <activity android:name=".Tests.NotificationTestActivity" />
+        <activity android:name=".Tests.ElasticTestActivity" />
+        <activity android:name=".Tests.ActivtyTesting23" />
+        <activity android:name=".Tests.RotateViewsActivity" />
+        <activity android:name=".Tests.FilesActivity" />
+        <activity android:name=".Tests.FilesActivity2" />
+        <activity android:name=".Tests.ShapesTests3Activity" />
+        <activity android:name=".Tests.ShapesTests2Activity" />
+        <activity android:name=".Activities.RestorePasswordActivty" />
+        <activity android:name=".Activities.NewPasswordActivity"></activity>
+    </application>
+
+</manifest>

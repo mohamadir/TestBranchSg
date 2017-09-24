@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.BaseActivity">
+
+
+    <item
+        android:id="@+id/action_notification1"
+        android:icon="@android:drawable/ic_delete"
+        android:title="action_notification"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/byscle_icon"
+                android:orderInCategory="100"
+                android:title="PROFILE" />
+
+            <item
+                android:id="@+id/c"
+                android:icon="@drawable/byscle_icon"
+                android:orderInCategory="100"
+                android:title="COMPLETED TRIPS" />
+
+            <item
+                android:id="@+id/app"
+                android:icon="@drawable/byscle_icon"
+                android:orderInCategory="100"
+                android:title="REPORT ISSUES" />
+            <item
+                android:id="@+id/r"
+                android:icon="@drawable/byscle_icon"
+                android:orderInCategory="100"
+                android:title="REACHED CENTER" />
+
+
+            <item
+                android:id="@+id/pdf"
+                android:icon="@drawable/byscle_icon"
+                android:orderInCategory="100"
+                android:title="BAG INFO" />
+            <item
+                android:id="@+id/l"
+                android:icon="@drawable/byscle_icon"
+                android:orderInCategory="100"
+                android:title="LOGOUT" />
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,292 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+<ScrollView
+    android:id="@+id/detailsScrollView"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="match_parent">
+    <!--                                All the Details in the Group               -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/newDetails_groupIv"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/paris"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/textViewChild"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:background="@drawable/calendar"
+                android:text="0 Day"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/placeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="4dp"
+
+                android:paddingTop="10dp"
+
+                android:text="Swim in the Dead Sea"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/dateHourTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04"
+                android:text="Mon 18/09/17"
+                android:textColor="@android:color/background_dark" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/button34"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="2dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView5"
+            android:background="@drawable/gradiant_color2" />
+
+        <at.blogc.android.views.ExpandableTextView
+            android:id="@+id/newDetails_groupDiscriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="asdasdasdasdasdasd"
+            app:animation_duration="1000" />
+
+
+        <ProgressBar
+            android:id="@+id/customProgress"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:progress="20"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/expand_discriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/splitline" />
+
+
+        <TextView
+            android:id="@+id/textView130"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Cheackout today's Services"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linaretHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/serviceImage1"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.03"
+                android:background="@drawable/hotel_icon" />
+
+            <TextView
+                android:id="@+id/button01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Har tzion Hotel" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linaretResturant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/serviceImage2"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/resturant_icon" />
+
+            <TextView
+                android:id="@+id/serviceTodayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Breakfast: Roza restaurant, Launch: BBQ at the mama's place, Dinner: Sandwitch" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linaretActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/serviceImage22"
+                android:layout_width="44dp"
+                android:layout_height="27dp"
+                android:background="@drawable/byscle_icon" />
+
+            <TextView
+                android:id="@+id/serviceTodayTexwtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Visit Masada, Swimming in the dead sea, Lot's wife, Mineral beach, hotel lobby" />
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linaretPlaces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/serviceImage12"
+                android:layout_width="47dp"
+                android:layout_height="28dp"
+                android:background="@drawable/fly_icon" />
+
+            <TextView
+                android:id="@+id/serviceTodayTextView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Travel in jerusalem with Egged Tours. Trip to the dead sea with Koby tours." />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linaretTRansport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/service3Image"
+                android:layout_width="44dp"
+                android:layout_height="27dp"
+                android:layout_weight="0.04"
+                android:background="@drawable/transport_icon" />
+
+            <TextView
+                android:id="@+id/serviceTo5dayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="A Bike ride across Judea desert - By Jonny bicycle All you can drink beer fest in Jerusalem - At The Beer Bar." />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linaretSites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/serviceImage"
+                android:layout_width="33dp"
+                android:layout_height="36dp"
+                android:background="@drawable/tourguide_icon" />
+
+            <TextView
+                android:id="@+id/serviceTodayTextView1212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Tour Guides in the old city of Ein Gedi." />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+</FrameLayout>

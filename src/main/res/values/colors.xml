@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#ad9a5b</color>
+    <color name="colorAccent">#999900</color>
+    <color name="accent_color">#ad9a5b</color>
+    <color name="green">#019a01</color>
+    <color name="colorGreen">#019a01</color>
+    <color name="orange">#999900</color>
+    <color name="colorOrange">#999900
+    </color>
+    <color name="colorDark">#111111
+    </color>
+    <color name="colorWhite">#ffffff
+    </color>
+    <color name="colorGray">#dddddd</color>
+    <color name="colorGrayDark">#444444</color>
+    <color name="colorBackground">#fafafa</color>
+</resources>

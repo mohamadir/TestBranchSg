@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snapgroup.Activities.NewGroupTransportationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout26"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout27">
+
+        <TextView
+            android:id="@+id/aaaaaaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="Driver language"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/driverTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Select"
+            android:textColor="@color/colorGreen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.66"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="Note"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="selceted" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@color/colorOrange"
+            android:textColor="@color/colorOrange" />
+
+        <TextView
+            android:id="@+id/detilas_toTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:gravity="right"
+            android:text="not selceted" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorGreen" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearLayout25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout26">
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="Only Authorized company"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/onlyAthTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Select"
+            android:textColor="@color/colorGreen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+
+        android:layout_below="@+id/linearLayout20"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout24">
+
+        <TextView
+            android:id="@+id/txx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:layout_weight="1"
+            android:text="Wi-Fi"
+
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/wifiTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"
+
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Select"
+            android:textColor="@color/colorGreen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout21"
+        android:layout_below="@+id/linearLayout24"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textView6121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+
+            android:text="Accessibility for the disabled"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/authCOmpanyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+
+            android:layout_weight="1"
+            android:text="Selcet"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorGreen"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:text="New Group"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Setting"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/transportationActivity_nextBt"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.37"
+
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="Next"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar6"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/custom_progressbar"
+        android:progress="70"
+        android:layout_below="@+id/ln2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout16"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/progressBar6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Select Transpotain "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_weight="0.38" />
+
+        <TextView
+            android:id="@+id/textView432"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.41"
+            android:text="(6 Days, 50 Members)"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGreen"
+            android:textSize="17dp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout17"
+        android:layout_below="@+id/linearLayout16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="VIp Airport service"
+            android:textColor="@color/colorDark"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/vipAirportTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorGreen"
+            android:text="Select" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout17"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout19">
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="Bus Category  A &amp; B   / properties"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout19"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout20">
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+
+            android:text="Air Conditining"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/air_conditionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select"
+            android:gravity="right"
+            android:textSize="14dp"
+
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorGreen"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout25">
+
+        <TextView
+            android:id="@+id/textView613"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+
+            android:text="Tv"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"
+
+            android:text="Select"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorGreen"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_height="match_parent"
+    tools:context="com.snapgroup.Fragments.DetailsFragment">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!--                                All the Details in the Group               -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="@dimen/spacing_medium"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/button39"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/paris" />
+                <View
+                    android:id="@+id/button34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageView5"
+                    android:background="@drawable/gradiant_color" />
+
+                <TextView
+                    android:id="@+id/newDetails_groupNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+
+                    android:text="Sao Paolo to Tel-Aviv,Jerusalem, Galillie,Westeros
+"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <View
+                    android:id="@+id/button341"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/imageView5"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/gradiant_color" />
+
+                <TextView
+                    android:id="@+id/textView104"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:text=" About" />
+
+
+                <TextView
+                    android:id="@+id/button40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+facilisi...." />
+
+                <View
+                    android:id="@+id/button343"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/imageView5"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/gradiant_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/button36"
+                        android:layout_width="41dp"
+                        android:gravity="center"
+                        android:layout_height="40dp"
+                        android:background="@drawable/profile_image"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView122"
+                            android:layout_width="match_parent"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="Daniel Cohen" />
+
+                        <TextView
+                            android:id="@+id/textView112"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut laoreet..." />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <View
+                    android:id="@+id/button344"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/imageView5"
+                    android:background="@drawable/gradiant_color" />
+
+                <TextView
+                    android:id="@+id/textView123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:text="Services" />
+
+                <ListView
+                    android:id="@+id/services_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:id="@+id/button345"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/imageView5"
+                    android:background="@drawable/gradiant_color" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" />
+
+                <Button
+                    android:id="@+id/button37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        I    </ScrollView>
+
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/left_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/chat_profile"
+        app:siRadius="3dp"
+        app:siSquare="true"
+        android:id="@+id/roundedImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="end"
+        android:text="Shira Rabina"
+        android:textSize="16dp"
+        android:layout_above="@+id/dh11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/roundedImageView"
+        android:layout_toStartOf="@+id/roundedImageView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dh11"
+        android:orientation="horizontal"
+        android:layout_below="@+id/roundedImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_toLeftOf="@+id/roundedImageView"
+                android:layout_toStartOf="@+id/roundedImageView"
+                android:background="@drawable/chat_bubble_right"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="25dp"
+                android:paddingTop="5dp"
+                android:text="hello :p"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/seen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dh11"
+                android:text="Seen 16:45"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView170"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Member" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NewTestPlanFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragmentParent"
+            android:name="com.snapgroup.Fragments.FragmentParent"
+            android:layout_width="fill_parent"
+            android:layout_height="521dp"
+            android:layout_above="@+id/relativeLayout" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout213"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/radiusTextVieww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Day 0"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout213">
+
+            <Button
+                android:id="@+id/imageRightBt"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_right_icon">
+
+            </Button>
+
+            <Button
+                android:id="@+id/imageLeftBt"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/imageRightBt"
+
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/arrow_left_icon"
+                android:gravity="center">
+
+            </Button>
+
+            <com.infteh.comboseekbar.ComboSeekBar xmlns:cbs="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/mapSeekBarr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageLeftBt"
+                android:layout_toLeftOf="@id/imageRightBt"
+                android:layout_toRightOf="@+id/imageLeftBt"
+                android:progress="0"
+                cbs:myColor="#FF999900"
+                cbs:textSize="14sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

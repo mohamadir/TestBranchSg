@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snapgroup.Activities.HotelServiceFilterActivity">
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/snapgroup"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button24"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:gravity="left"
+            android:background="@color/orange"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"
+            android:text="Check availability:"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.02"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:paddingLeft="20dp"
+                    android:text="Available from:" />
+
+                <TextView
+                    android:id="@+id/hotel_service_tvFrom"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93"
+                    android:gravity="right"
+                    android:paddingRight="2dp"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:text="00/00/00"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/hotel_service_dpFrom"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/celndr"
+                    android:onClick="showDatePickerDialog" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_below="@+id/linearLayout4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="205dp"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="To:" />
+
+                <TextView
+                    android:id="@+id/hotel_service_tvTo"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.82"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:gravity="right"
+                    android:paddingRight="2dp"
+                    android:text="00/00/00"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/hotel_service_dpTo"
+                    android:layout_width="25dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/celndr"
+                    android:onClick="showDatePickerDialog2" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/checkBt"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp"
+                android:layout_marginBottom="152dp"
+                android:background="@drawable/button_border_pay2"
+                android:gravity="center"
+                android:text="Check"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

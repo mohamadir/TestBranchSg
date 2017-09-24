@@ -1,0 +1,123 @@
+<!--<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    &lt;!&ndash;<group android:checkableBehavior="single">&ndash;&gt;
+
+   <item android:id="@+id/my_profile_drawer_item"
+        android:title="My Profile"
+        android:icon="@drawable/message_icon"
+        />
+    <item android:id="@+id/my_account_drawer_item"
+        android:title="Account"
+        android:icon="@drawable/profile_image"
+        />
+  &lt;!&ndash;  <item android:id="@+id/my_groups_drawer_item"
+        android:title="Create Group"
+        android:icon="@drawable/eye_icon"/>
+    <item android:id="@+id/my_draft_groups"
+        android:title="My Drafts"
+        android:icon="@drawable/draft"/>
+    <item android:id="@+id/my_trips__drawer_item"
+        android:title="My Trips"
+        android:icon="@drawable/ic_flag_black_24dp"/>
+    <item android:id="@+id/my_favorites_drawer_item"
+        android:title="My Favorites"
+        android:icon="@drawable/ic_favorite_black_24dp"/>
+    <item android:id="@+id/my_history_drawer_item"
+        android:title="My History"
+        android:icon="@drawable/ic_history_black_24dp"/>
+   &ndash;&gt;
+    <item android:id="@+id/test_pages"
+        android:title="App test pages"
+        />
+    <item android:id="@+id/signOut"
+        android:title="Sing Out"
+        />
+
+
+    &lt;!&ndash;</group>&ndash;&gt;
+    &lt;!&ndash;<item android:title="">&ndash;&gt;
+        &lt;!&ndash;<menu>&ndash;&gt;
+            &lt;!&ndash;<item android:id="@+id/my_history_drawer_item2"&ndash;&gt;
+                &lt;!&ndash;android:title="Messages"&ndash;&gt;
+                &lt;!&ndash;android:icon="@drawable/ic_message_black_24dp"/>&ndash;&gt;
+            &lt;!&ndash;<item android:id="@+id/my_history_drawer_item3"&ndash;&gt;
+                &lt;!&ndash;android:title="Currency"&ndash;&gt;
+                &lt;!&ndash;android:icon="@drawable/ic_attach_money_black_24dp"/>&ndash;&gt;
+            &lt;!&ndash;<item android:id="@+id/my_history_drawer_item4"&ndash;&gt;
+                &lt;!&ndash;android:title="Help Center"&ndash;&gt;
+                &lt;!&ndash;android:icon="@drawable/ic_help_outline_black_24dp"/>&ndash;&gt;
+        &lt;!&ndash;</menu>&ndash;&gt;
+    &lt;!&ndash;</item>&ndash;&gt;
+</menu>-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+    android:id="@+id/action_new"
+    android:icon="@drawable/menu"
+    android:title="sdfsdf"
+    app:showAsAction="always">
+
+
+    <menu>
+            <item
+                android:id="@+id/my_profile_drawer_item"
+                android:icon="@drawable/person2"
+                app:showAsAction="always|withText"
+                android:title="z" />
+
+            <item android:title=""
+                android:icon="@color/Black"
+            android:iconTint="@color/background_color"></item>
+
+
+
+
+        <item
+            android:id="@+id/my_profile_draswer_item"
+            android:icon="@drawable/setting"
+            android:title="Setting"
+            app:showAsAction="always|withText" />
+
+
+        <group
+            android:id="@+id/asd"
+            android:enabled="true"
+            android:visible="true"
+           >
+        <item
+            android:id="@+id/my_account_drawer_item"
+            android:icon="@drawable/notf_icon"
+            android:title="Notification"
+            app:showAsAction="always|withText" />
+        <item
+            android:id="@+id/my_groups_drawer_item"
+            android:icon="@drawable/money"
+            android:title="Currency(USD)"
+            app:showAsAction="always|withText" />
+        <item
+            android:id="@+id/my_draft_groups"
+            android:icon="@drawable/help"
+            android:title="Help Center"
+            app:showAsAction="always|withText" />
+        <item
+            android:id="@+id/signOut"
+            android:title="Rate Us"
+            android:icon="@drawable/rete_icon"
+            app:showAsAction="always|withText" />
+        <item
+            android:id="@+id/ssss"
+            android:title="Application Info"
+            android:icon="@drawable/notf_icon"
+            app:showAsAction="always|withText" />
+        <item
+            android:id="@+id/test_pages"
+            android:title="Share"
+            android:icon="@drawable/share_icon"
+            app:showAsAction="always|withText" />
+        </group>
+
+    </menu>
+</item>
+</menu>
+

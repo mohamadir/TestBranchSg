@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/left_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/chat_profile_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:src="@drawable/chat_profile"
+        app:siRadius="3dp"
+        app:siSquare="true" />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:text="Shira Rabina"
+        android:textSize="16dp"
+        android:layout_above="@+id/aaaa221"
+        android:layout_toRightOf="@+id/chat_profile_iv"
+        android:layout_toEndOf="@+id/chat_profile_iv" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aaaa221"
+        android:orientation="horizontal"
+        android:layout_below="@+id/chat_profile_iv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView163"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leader" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/chat_bubble_left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="hello every body"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/seen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_alignRight="@+id/aaaa221"
+                android:layout_below="@+id/aaaa221"
+                android:layout_marginTop="2dp"
+                android:text="Seen 16:45"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

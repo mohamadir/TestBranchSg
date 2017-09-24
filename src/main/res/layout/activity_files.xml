@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snapgroup.Tests.FilesActivity">
+
+
+    <Button
+        android:id="@+id/uploadBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Button" />
+
+    <ImageView
+        android:id="@+id/testIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploadBt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="157dp"
+        app:srcCompat="@drawable/a11" />
+
+    <Button
+        android:id="@+id/pdfUploadBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uploadBt"
+        android:layout_alignStart="@+id/uploadBt"
+        android:layout_below="@+id/uploadBt"
+        android:layout_marginTop="30dp"
+        android:text="pdf upload" />
+</RelativeLayout>

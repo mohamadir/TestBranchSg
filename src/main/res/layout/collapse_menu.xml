@@ -1,0 +1,190 @@
+<RelativeLayout android:id="@+id/imagey"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/White"
+    android:fitsSystemWindows="true"
+    android:scaleType="centerCrop"
+    app:titleEnabled="false"
+    app:layout_collapseMode="pin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--app:layout_collapseMode="parallax" למעלה   -->
+
+    <TextView
+        android:id="@+id/textView107"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView108"
+        android:layout_alignBottom="@+id/textView108"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/textView108"
+        android:layout_toRightOf="@+id/textView108"
+        android:gravity="center"
+        android:text="Members" />
+
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView108"
+        android:layout_alignBottom="@+id/textView108"
+        android:layout_toEndOf="@+id/textView107"
+        android:layout_toRightOf="@+id/textView107"
+        android:gravity="center"
+        android:text="Vote" />
+
+    <TextView
+        android:id="@+id/textView108"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView111"
+        android:layout_alignBottom="@+id/textView111"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/textView111"
+        android:layout_toRightOf="@+id/textView111"
+        android:gravity="center"
+        android:text="Map" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/newDetails_planBt2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:gravity="center"
+        android:text="Chat" />
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView118"
+        android:layout_alignBottom="@+id/textView118"
+        android:layout_alignEnd="@+id/textView107"
+        android:layout_alignRight="@+id/textView107"
+        android:gravity="center"
+        android:text="Prices" />
+
+    <TextView
+        android:id="@+id/textView120"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView118"
+        android:layout_alignBottom="@+id/textView118"
+        android:layout_alignEnd="@+id/textView119"
+        android:layout_alignRight="@+id/textView119"
+        android:gravity="center"
+        android:text="Payments" />
+
+    <TextView
+        android:id="@+id/textView118"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView117"
+        android:layout_alignBottom="@+id/textView117"
+        android:layout_alignLeft="@+id/textView108"
+        android:layout_alignStart="@+id/textView108"
+        android:gravity="center"
+        android:text="Documents" />
+
+    <TextView
+        android:id="@+id/textView117"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/textView111"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView111"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Plan" />
+
+    <Button
+        android:id="@+id/newDetails_mapBt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/newDetails_membersBt2"
+        android:layout_alignLeft="@+id/textView108"
+        android:layout_alignStart="@+id/textView108"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/map_icon" />
+
+    <Button
+        android:id="@+id/newDetails_membersBt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textView107"
+        android:layout_alignEnd="@+id/textView107"
+        android:layout_alignRight="@+id/textView107"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/members_icon" />
+
+    <Button
+        android:id="@+id/newDetails_voteBt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/newDetails_membersBt2"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/newDetails_membersBt2"
+        android:layout_toRightOf="@+id/newDetails_membersBt2"
+        android:background="@drawable/question_icon" />
+
+    <Button
+        android:id="@+id/newDetails_pricesBt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/newDetails_documentsBt2"
+        android:layout_alignLeft="@+id/newDetails_membersBt2"
+        android:layout_alignStart="@+id/newDetails_membersBt2"
+        android:background="@drawable/dollar" />
+
+    <Button
+        android:id="@+id/newDetails_paymentsBt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/newDetails_pricesBt2"
+        android:layout_alignLeft="@+id/newDetails_voteBt2"
+        android:layout_alignStart="@+id/newDetails_voteBt2"
+        android:background="@drawable/shtar" />
+
+    <Button
+        android:id="@+id/newDetails_documentsBt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/newDetails_planBt2"
+        android:layout_alignLeft="@+id/newDetails_mapBt2"
+        android:layout_alignStart="@+id/newDetails_mapBt2"
+        android:background="@drawable/attach" />
+
+    <Button
+        android:id="@+id/newDetails_planBt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textView115"
+        android:layout_alignLeft="@+id/newDetails_chatBt2"
+        android:layout_alignStart="@+id/newDetails_chatBt2"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/location_icon" />
+
+    <Button
+        android:id="@+id/newDetails_chatBt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/newDetails_mapBt2"
+        android:layout_alignLeft="@+id/textView111"
+        android:layout_alignStart="@+id/textView111"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:background="@drawable/chat_icon" />
+
+</RelativeLayout>

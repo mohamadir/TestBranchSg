@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snapgroup.Activities.NewGroupProfile1Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ln2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+
+            android:paddingTop="10dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:paddingBottom="3dp"
+                android:text="New Group"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:text="Profile"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/profileNextTv"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.37"
+
+                android:gravity="right"
+                android:paddingRight="5dp"
+                    android:text="Create Group     "
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressBar5"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/custom_progressbar"
+            android:progress="20" />
+        <EditText
+            android:id="@+id/NewGroupProfile1_nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.16"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+
+            android:hint="Group Name"
+
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/NewGroupProfile1_descriptionEt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:gravity="top"
+            android:layout_weight="1.00"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Group Description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView90"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_weight="5"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:text="Expected Number of Members: " />
+
+            <EditText
+                android:id="@+id/expectedNumberEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_weight="2"
+                android:hint="45" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/linearLayout4"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:text="Group Starting At "
+                android:layout_width="212dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:layout_weight="0.55" />
+
+            <TextView
+                android:id="@+id/settingsActiivty_dateFromTv"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.41"
+                android:text="00/00/00"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/settings_service_tvTo"
+                android:layout_width="26dp"
+                android:onClick="showDatePickerDialog"
+                android:layout_height="20dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/celndr" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.13"
+                android:paddingLeft="20dp"
+                android:text="JOin the Group Will End at"
+                />
+
+            <TextView
+                android:id="@+id/settingsActiivty_dateToTv"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.89"
+                android:text="00/00/00"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/settings_service_dpTo"
+                android:layout_width="26dp"
+                android:layout_height="20dp"
+                android:background="@drawable/celndr"
+                android:onClick="showDatePickerDialog2"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_weight="0.57"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/profile1Activity_firstImageBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/service_button_border"
+                    android:text="+"
+                    android:layout_weight="0.09" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/profile1Activity_thirdImageBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.35"
+                    android:background="@drawable/service_button_border"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/button42"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.36"
+                    android:background="@drawable/service_button_border"
+                    android:text="+" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

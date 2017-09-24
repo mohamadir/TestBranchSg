@@ -1,0 +1,54 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.snapgroup.Fragments.VoteFragmentTabs">
+<!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voting Page"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/textView178" />
+
+            <com.snapgroup.Activities.NonScrollListView
+                android:id="@+id/listView12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/gradiant_color2"
+                android:dividerHeight="2dp"
+                android:layout_below="@+id/textView178"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+               ></com.snapgroup.Activities.NonScrollListView>
+
+            <!--    <com.snapgroup.Activities.NonScrollListView
+                    android:id="@+id/votes_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />-->
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

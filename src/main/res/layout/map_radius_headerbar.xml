@@ -1,0 +1,16 @@
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar5"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    app:layout_collapseMode="pin"
+    android:background="@color/White"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_gravity="right"
+        android:background="@drawable/message_icon_yosi"
+        android:gravity="right" />
+
+</android.support.v7.widget.Toolbar>

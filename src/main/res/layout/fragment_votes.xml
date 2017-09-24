@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    tools:context="com.snapgroup.Fragments.VotesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.com.snapgroup.VoteList">
+
+        <include
+            layout="@layout/vote_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ExpandableListView
+            android:id="@+id/vote_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@drawable/list_indicator"
+            android:indicatorRight="50dp"
+            android:transcriptMode="alwaysScroll"
+            android:listSelector="@android:color/transparent"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</FrameLayout>

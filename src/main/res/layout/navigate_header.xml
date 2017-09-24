@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@color/orange"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <TextView
+        android:id="@+id/nav_header_nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zohar Argov"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/nav_header_profileImg"
+        android:layout_toRightOf="@+id/nav_header_profileImg"
+        android:layout_toEndOf="@+id/nav_header_profileImg"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:id="@+id/nav_header_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aa@aa.com"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/nav_header_nameTv"
+        android:layout_alignLeft="@+id/nav_header_nameTv"
+        android:layout_alignStart="@+id/nav_header_nameTv" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="700dp"
+        android:layout_height="2dp"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:text="Button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/nav_header_SignOut"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:text="Sign Out"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/nav_header_email"
+        android:layout_alignStart="@+id/nav_header_email"
+        android:layout_marginBottom="13dp" />
+
+    <ImageView
+        android:id="@+id/nav_header_profileImg"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:padding="10dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+         />
+</RelativeLayout>

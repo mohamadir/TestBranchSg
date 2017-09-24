@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snapgroup.Tests.ShapesTestsActivity">
+    <ImageView
+        android:id="@+id/myButton"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/message_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="100dp" />
+    <TextView
+        android:id="@+id/textOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/badge_circle"
+        android:layout_alignTop="@+id/myButton"
+        android:layout_alignLeft="@+id/myButton"
+        android:layout_alignStart="@+id/myButton"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp" />
+
+
+
+
+</RelativeLayout>

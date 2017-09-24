@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context="com.snapgroup.Activities.TestsPagesActivity">
+    <include layout="@layout/toolbar_actionbar_with_headerbar" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="this pages are in progress .. "
+        android:layout_weight="13.08" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="477dp">
+    <RelativeLayout
+    android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical"
+        android:weightSum="17">
+
+
+
+        <Button
+            android:id="@+id/youtubeBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="YouTUbe" />
+
+        <Button
+            android:id="@+id/ServicesChooseBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="ServicesChoose" />
+
+            <Button
+                android:id="@+id/hosenShape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="hosenShape" />
+
+            <Button
+            android:id="@+id/DaysLocationsBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginBottom="15sp"
+            android:layout_weight="1"
+            android:text="DaysLocations" />
+
+        <Button
+            android:id="@+id/HotlesBroadCastBt"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="15sp"
+            android:layout_weight="1"
+            android:text="HotlesBroadCast" />
+
+
+        <Button
+            android:id="@+id/MapsRadiusBt"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="15sp"
+            android:layout_weight="1"
+            android:text="MapsRadius" />
+
+        <Button
+            android:id="@+id/daysListPlanBt"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:text="Days and Map" />
+
+        <Button
+            android:id="@+id/daysListBroadCastBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="Days LIst Broadcast" />
+        <Button
+            android:id="@+id/CsvUploadBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="Csv Upload" />
+        <Button
+            android:id="@+id/tabsPageBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_weight="2.99"
+            android:text="tabsPage" />
+
+
+            <Button
+                android:id="@+id/groupLeaderProfileBt"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Group Leader Page" />
+
+            <Button
+                android:id="@+id/groupMembersBt"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Group Members Page" />
+
+            <Button
+                android:id="@+id/joinPageBt"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="join Page" />
+
+            <Button
+                android:id="@+id/notificationBt"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Notification Connect" />
+            <Button
+                android:id="@+id/filesBt"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Black"
+                android:text="Files Uplaod" />
+            <Button
+                android:id="@+id/rotateBt"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rotate view" />
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

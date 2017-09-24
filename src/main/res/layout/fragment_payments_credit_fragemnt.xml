@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="700dp"
+        tools:context="com.com.snapgroup.PaymentsPage2">
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_border"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:layout_below="@+id/textView61"
+            android:layout_toLeftOf="@+id/button20"
+            android:layout_toStartOf="@+id/button20"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView31"
+            android:background="@drawable/secure"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <TextView
+            android:id="@+id/cardsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout3"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="11dp"
+            android:text="Cards Number"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="251dp" />
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/address1Et"
+            android:layout_alignStart="@+id/address1Et"
+            android:layout_below="@+id/address1Et"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button25"
+            android:layout_alignLeft="@+id/textView58"
+            android:layout_alignRight="@+id/button25"
+            android:layout_alignStart="@+id/textView58"
+            android:layout_below="@+id/textView58"
+            android:layout_marginTop="18dp"
+            android:text="City"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText5"
+            android:layout_alignLeft="@+id/textView52"
+            android:layout_alignStart="@+id/textView52"
+            android:text="Address 2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detilas_toTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView62"
+            android:layout_alignBottom="@+id/textView62"
+            android:layout_alignEnd="@+id/cardsTv"
+            android:layout_alignLeft="@+id/textView59"
+            android:layout_alignRight="@+id/cardsTv"
+            android:layout_alignStart="@+id/textView59"
+            android:text="Postal Code"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView59"
+            android:layout_marginTop="28dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/detilas_toTv"
+            android:layout_alignStart="@+id/detilas_toTv"
+            android:layout_below="@+id/editText15"
+            android:layout_marginTop="16dp"
+            android:text="Phone"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/detilas_toTv"
+            android:layout_alignBottom="@+id/detilas_toTv"
+            android:layout_alignEnd="@+id/expiredYearSp"
+            android:layout_alignLeft="@+id/editText5"
+            android:layout_alignRight="@+id/expiredYearSp"
+            android:layout_alignStart="@+id/editText5"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView63"
+            android:layout_alignStart="@+id/textView63"
+            android:layout_below="@+id/textView63"
+            android:layout_marginTop="17dp"
+            android:text="Email"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText5"
+            android:layout_alignEnd="@+id/textView49"
+            android:layout_alignLeft="@+id/textView57"
+            android:layout_alignRight="@+id/textView49"
+            android:layout_alignStart="@+id/textView57"
+            android:text="State"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView31"
+            android:layout_alignBottom="@+id/textView31"
+            android:layout_toEndOf="@+id/textView47"
+            android:layout_toRightOf="@+id/textView47"
+            android:text="Payment"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            tools:layout_editor_absoluteX="198dp"
+            tools:layout_editor_absoluteY="36dp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/cvvEt"
+            android:layout_alignLeft="@+id/textView35"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/cvvEt"
+            android:layout_alignStart="@+id/textView35"
+            android:layout_marginTop="53dp"
+            android:text="Saint Zohar Group"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="36dp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button25"
+            android:layout_alignBottom="@+id/button25"
+            android:layout_toEndOf="@+id/button25"
+            android:layout_toLeftOf="@+id/editText15"
+            android:layout_toRightOf="@+id/button25"
+            android:text="Secure page !"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:typeface="sans"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="81dp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cardsTv"
+            android:layout_alignStart="@+id/cardsTv"
+            android:layout_below="@+id/button25"
+            android:layout_marginTop="22dp"
+            android:layout_toLeftOf="@+id/cardNumberEt"
+            android:text="Credit Cards Accepted: "
+            android:textSize="11sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="275dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="190dp"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/cardNumberEt"
+            android:layout_alignRight="@+id/cardNumberEt"
+            android:layout_below="@+id/textView33"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioVIsa"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:scaleX="0.8"
+                android:scaleY="0.8" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/visa" />
+
+            <RadioButton
+                android:id="@+id/radioMaster"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:scaleX="0.8"
+                android:scaleY="0.8" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/master_card" />
+
+            <RadioButton
+                android:id="@+id/radioExpress"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:scaleX="0.8"
+                android:scaleY="0.8" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/express" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/cardNumberEt"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/cardsTv"
+            android:layout_alignBottom="@+id/cardsTv"
+            android:layout_alignLeft="@+id/expiredMonthSp"
+            android:layout_alignStart="@+id/expiredMonthSp"
+            android:layout_marginLeft="5dp"
+            android:ems="10"
+            android:hint="Card NUmber"
+            android:inputType="number"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/nameOnCardEt"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/cvvEt"
+            android:layout_alignStart="@+id/cvvEt"
+            android:layout_below="@+id/cvvEt"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/editText11"
+            android:layout_alignStart="@+id/editText11"
+            android:layout_below="@+id/editText11"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/textView57"
+            android:layout_alignBottom="@+id/textView57"
+            android:layout_alignLeft="@+id/editText5"
+            android:layout_alignStart="@+id/editText5"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/address1Et"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/countrySp"
+            android:layout_alignStart="@+id/countrySp"
+            android:layout_below="@+id/countrySp"
+            android:autoSizeMaxTextSize="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText11"
+            android:layout_alignLeft="@+id/textView48"
+            android:layout_alignStart="@+id/textView48"
+            android:text="Address 1"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cvvEt"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/linearLayout3"
+            android:layout_alignStart="@+id/linearLayout3"
+            android:layout_below="@+id/expiredMonthSp"
+            android:ems="10"
+            android:hint="cvv"
+            android:inputType="number"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cardNumberEt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:text="Expird Date(MM)"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/expiredMonthSp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardNumberEt"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/countrySp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView49"
+            android:layout_alignEnd="@+id/expiredYearSp"
+            android:layout_alignLeft="@+id/nameOnCardEt"
+            android:layout_alignRight="@+id/expiredYearSp"
+            android:layout_alignStart="@+id/nameOnCardEt" />
+
+        <Spinner
+            android:id="@+id/expiredYearSp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView47"
+            android:layout_below="@+id/cardNumberEt"
+            android:layout_toEndOf="@+id/textView47"
+            android:layout_toRightOf="@+id/textView47" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/expiredMonthSp"
+            android:layout_toEndOf="@+id/expiredMonthSp"
+            android:layout_toRightOf="@+id/expiredMonthSp"
+            android:text="/"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView46"
+            android:layout_alignStart="@+id/textView46"
+            android:layout_alignTop="@+id/button20"
+            android:text="CVV"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/expiredMonthSp"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/expiredYearSp"
+            android:layout_toStartOf="@+id/expiredYearSp"
+            android:layout_weight="2"
+            android:background="@drawable/cvv" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView52"
+            android:layout_alignStart="@+id/textView52"
+            android:layout_below="@+id/nameOnCardEt"
+            android:layout_marginTop="18dp"
+            android:text="Country"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView49"
+            android:layout_alignLeft="@+id/textView52"
+            android:layout_alignStart="@+id/textView52"
+            android:text="Name On Card"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText14"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/editText15"
+            android:layout_alignStart="@+id/editText15"
+            android:layout_below="@+id/editText17"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/editText17"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/textView63"
+
+            android:layout_alignBottom="@+id/textView63"
+            android:layout_alignEnd="@+id/editText14"
+            android:layout_alignLeft="@+id/editText14"
+            android:layout_alignRight="@+id/editText14"
+            android:layout_alignStart="@+id/editText14"
+            android:autoSizeMaxTextSize="10sp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+
+    </RelativeLayout>
+</ScrollView>

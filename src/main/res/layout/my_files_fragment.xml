@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:id="@+id/files_fragment"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/uploadMediaBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:layout_width="45dp"
+                android:layout_height="51dp"
+                android:background="@drawable/upload_icon"/>
+
+            <TextView
+                android:id="@+id/textView158"
+                android:layout_width="wrap_content"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.00"
+                android:textSize="30sp"
+                android:text="Upload Media.." />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/button34"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView5"
+            android:background="@drawable/gradiant_color" />
+
+        <TextView
+            android:id="@+id/textView1asd62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/Black"
+            android:layout_marginTop="15dp"
+            android:text="My Uploaded FIles" />
+
+        <GridView
+            android:id="@+id/myFilesGv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:clickable="true"
+            android:columnWidth="50dp"
+            android:drawSelectorOnTop="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:horizontalSpacing="0dp"
+            android:listSelector="#00000000"
+            android:numColumns="3" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snapgroup.Fragments.CheckLIstFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linaret23123"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+     >
+
+
+        <TextView
+            android:id="@+id/textView164"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="268dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="please Make sure you rember to bring the following items with you"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView165"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Required" />
+
+        <LinearLayout
+            android:id="@+id/ln221"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/another_requirment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:ems="10"
+                android:gravity="left"
+                android:inputType="textPersonName"
+                android:hint="Add Requirmant" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_weight="1"
+                android:text="+" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView1sad65"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:text="Recommended" />
+        <LinearLayout
+            android:id="@+id/ln2s21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+
+            android:orientation="vertical"></LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</FrameLayout>

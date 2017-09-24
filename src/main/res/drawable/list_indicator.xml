@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/arrow_right" android:width="15dp" android:height="15dp" android:state_empty="true">  </item>
+    <item android:drawable="@drawable/arrow_down" android:state_expanded="true"></item>
+    <item android:drawable="@drawable/arrow_right" android:top="15dp" android:bottom="15dp"></item>
+</selector>

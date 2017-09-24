@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <View
+            android:id="@+id/button34"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/gradiant_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView1asd62"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.16"
+                android:text="My Uploaded FIles"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/cancelBt"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.02"
+                android:background="@drawable/delete_file_group_icon"
+                android:text="" />
+            />
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/myFilesGv"
+            android:layout_width="328dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:columnWidth="50dp"
+            android:drawSelectorOnTop="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:horizontalSpacing="0dp"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:padding="10dp" />
+
+        <View
+            android:id="@+id/button4564765434"
+            android:layout_width="wrap_content"
+            android:layout_height="0.01dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/gradiant_color"
+            android:visibility="visible" />
+
+        18
+
+        <LinearLayout
+            android:id="@+id/uploadMediaBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/upload_icon" />
+
+            <TextView
+                android:id="@+id/textView158"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.00"
+                android:gravity="bottom"
+                android:text="Upload a new file"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

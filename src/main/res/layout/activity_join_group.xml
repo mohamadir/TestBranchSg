@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.snapgroup.Activities.JoinGroupActivity"
+    android:weightSum="1">
+    <include layout="@layout/toolbar_actionbar_with_headerbar" />
+
+
+    <ScrollView
+        android:id="@+id/deta3ilsScrollView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView148"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Join"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView137"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text='"Visit Jersleum jaber"'
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayasdout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/groupLis3tActivity_invitesFilterTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="My details"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/groupListActivit3y_myGroupsTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Going with"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <Button
+                        android:id="@+id/gr3oupsButton"
+                        android:layout_width="70dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/gradiant_color" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <GridView
+                android:id="@+id/gridViewJoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:columnWidth="50dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="3"
+                android:scrollbars="horizontal"
+                android:stretchMode="columnWidth"
+                android:visibility="gone" />
+
+
+
+            <com.snapgroup.Activities.ContactsCompletionView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:textColor="@android:color/darker_gray"
+                android:hint="Search Contant"
+                android:completionThreshold="1"
+                android:minEms="1"
+                android:nextFocusDown="@+id/editText"
+                android:inputType="text|textNoSuggestions|textMultiLine"
+                android:focusableInTouchMode="true" >
+                </com.snapgroup.Activities.ContactsCompletionView>
+
+            <com.snapgroup.Classes.NonScrollListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/anotherPersonList"
+                >
+            </com.snapgroup.Classes.NonScrollListView>
+
+            <TextView
+                android:id="@+id/textVie3w156"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Other"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/anitherfirstNameJoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/anitherLastNameJoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Surname"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/anitherPassportJoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="passport id"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/another_person_date_birthdayET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Date of Bith"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/another_person_date_birthdayBT"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.18"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:textSize="6sp"
+                    android:background="@drawable/calendar"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/another_person_issue_ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="issue date"
+                    android:inputType="textCapCharacters|textPersonName"
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/another_person_issue_Bt"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.18"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:textSize="6sp"
+                    android:background="@drawable/calendar"
+                    />
+
+
+                <EditText
+                    android:id="@+id/another_person_exp_Et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Expiration date"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/another_person_exp_BT"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.18"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:textSize="6sp"
+                    android:background="@drawable/calendar"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/anitherGenderJoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Selct Gender"
+                    android:inputType="textCapCharacters|textPersonName"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/anitherAgeJoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Age"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+
+
+
+
+            <com.snapgroup.Activities.ContactsCompletionView
+                android:id="@+id/acountpersons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:contextClickable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Acount persons"
+                android:minEms="1"
+                android:visibility="gone"
+                android:nextFocusDown="@+id/editText"
+                android:textColor="@android:color/darker_gray">
+
+            </com.snapgroup.Activities.ContactsCompletionView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textVie3w89"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.26"
+                        android:text="Upload passport Copy"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/butto3n7"
+                        android:layout_width="26dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/upload_icon" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3157"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Can be done later on the group docs" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/addAnthoerPerson"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="+ Add another person"
+                />
+
+            <View
+                android:id="@+id/butto3n34"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gradiant_color2" />
+
+
+            <Button
+                android:id="@+id/joinGroupdButto12nDialog11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+
+                android:layout_marginTop="20dp"
+                android:background="@color/accent_color"
+                android:text="Join to The Group"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/detailsScrollView"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textVie23w148"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Join"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textV32iew137"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text='"Visit hosden Group"'
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/groupListActivity_invitesFilterTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="My details"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+                    <Button
+                        android:id="@+id/groupsButto2n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradiant_color"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/groupListActivity_myGroupsTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Going with"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <Button
+                        android:id="@+id/groupsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradiant_color"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView156"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="PLease provide the following information before joining the group"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/first_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/last_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/passport_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="passport id"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Date of Bith"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/settings_sssservice_tvTo"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.18"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:textSize="6sp"
+                    android:background="@drawable/calendar"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/issueEdittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="issue date"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/dateIssue"
+                    android:layout_width="26dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.18"
+                    android:background="@drawable/calendar"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:textSize="6sp"/>
+
+                <EditText
+                    android:id="@+id/expEdittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Expiration date"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/dateExp"
+                    android:layout_width="26dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.18"
+                    android:background="@drawable/calendar"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:textSize="6sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView89"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.26"
+                        android:text="Upload passport Copy"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/upload_icon" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView157"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Can be done later on the group docs" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/button34"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gradiant_color2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView160"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.49"
+                    android:text="i'm a "
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/genderText"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Male / female"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView161"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="and my age is"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ageText"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="45"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText21"
+                android:layout_marginTop="20dp"
+                android:layout_width="320dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:background="@drawable/rectangleshapes"
+                android:ems="10"
+
+                android:gravity="top"
+                android:hint="spicail note"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/joinGroupdButtonDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+
+                android:layout_marginTop="20dp"
+                android:background="@color/accent_color"
+                android:text="Join to The Group"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>
